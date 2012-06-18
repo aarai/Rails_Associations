@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @app.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @app.creator %>
+</p>
+
+<p>
+  <b>Models:</b>
+  <%= @app.controllers.name %>
+</p>
+
+<p>
+  <b>Controllers:</b>
+  <%= @app.models.name %>
+</p>
+<%= link_to 'Edit', edit_app_path(@app) %> |
+<%= link_to 'Back', apps_path %>
