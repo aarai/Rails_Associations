@@ -31,7 +31,6 @@ class AppsController < ApplicationController
     
     1.times { @app.controllers.build }
     1.times { @app.models.build }
-    1.times { @creator = @app.build_creator }
     
 
     respond_to do |format|
